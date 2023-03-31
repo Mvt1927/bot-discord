@@ -1,0 +1,18 @@
+const { Client, Message, SlashCommandBuilder } = require('discord.js')
+const { Config } = require('../../config/dto')
+
+module.exports = {
+    name: /* Name */,
+    data: new SlashCommandBuilder()
+		.setName(/* Name */)
+		.setDescription(/* Description */),
+    /**
+     * @arg {Config} config
+     * @arg {Client<true>} client 
+     * @arg {Message} message
+     * @arg {string[]} args
+    */
+    run: async (config, client, message, args) => {
+        /* Code */
+    }
+}
